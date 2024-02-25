@@ -1,0 +1,29 @@
+extends ../templates/template
+
+block header
+    nav.nav
+        div
+            img(src="../assets/img/logo-unefa.png", alt="logo-unefa")
+            p.logo UNEFA
+        ul.nav-list
+            li: a(href="/") Inicio
+            li: a(href="/add") Agregar
+            li: a(href="/search") Consultar
+
+block main
+
+    section.delete
+        h1 Eliminar un Registro
+        div.delete-div
+            p Para eliminar un Registro o Fila de la Base de Datos, usted necesitas saber el Serial del producto que deseas eliminar.
+            form.delete-container(method="post" action="/deleted" autocomplete="off")
+                div.delete-query
+                    input#inputSearch(type="text" name="deleteSerial" placeholder="Buscar" onclick="obtenerValor()")
+                    button.btn-query#btnQuery(type="submit"): img(src="../assets/icon/search_white_24dp.svg", alt="icon-search")
+            div.spinner
+                div 
+                div 
+                div 
+                div 
+                div 
+                div 

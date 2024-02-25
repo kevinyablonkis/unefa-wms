@@ -1,0 +1,27 @@
+doctype html
+html(lang="es")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="../css/normaliza.css")
+        if darkMode
+            link(rel="stylesheet", href="../css/style-dark.css")
+        else
+            link(rel="stylesheet", href="../css/style.css")
+        link(rel="icon", href="../assets/icon/logo-unefa.ico" type="image/x-icon")
+        title Unefa WMS
+    body
+        header.header
+            block header
+        main.main
+            block main
+        aside.aside
+            block aside
+        footer.footer
+            nav.nav-footer
+                p Warehouse Management System
+                ul.nav-footer-list
+                    li: a(href="/documentation") Documentación
+            block footer
+        script(defer src="../js/script.js")
+            block script

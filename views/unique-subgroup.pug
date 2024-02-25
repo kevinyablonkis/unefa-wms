@@ -1,0 +1,36 @@
+extends ../templates/template
+
+block header
+    nav.nav
+        div
+            img(src="../assets/img/logo-unefa.png", alt="logo-unefa")
+            p.logo UNEFA
+        ul.nav-list
+            li: a(href="/") Inicio
+
+block main
+
+    section.unique
+        div.add-container
+            form(method="post" action="/imprint/unique-subgroup/download-unique" autocomplete="off")
+                h1 Datos a Insertar
+                div.unique-container
+                    div.admin-bienes
+                        div.add-admin
+                            label(for="admin") Administrador
+                            input(id="admin" name="admin" type="text" autofocus required)
+                        div.bienes
+                            label(for="admbiene") Adm. Bienes
+                            input(id="admbiene" name="admbiene" type="text" required)
+                    div.date-decano
+                        div.add-decano
+                            label(for="decano") Decano
+                            input(id="decano" name="decano" type="text" required)
+                        div.add-decano
+                            label(for="date") Fecha
+                            input(id="date" name="date" type="text" required)
+                    div.add-decano
+                        label(for="subgroup") Subgrupo
+                        input(id="subgroup" name="subgroup" type="text")
+                    input.btn-input(type="submit" value="Crear")
+            div.decorate

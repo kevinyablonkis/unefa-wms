@@ -1,0 +1,35 @@
+extends ../templates/template
+
+block header
+    nav.nav
+        div
+            img(src="../assets/img/logo-unefa.png", alt="logo-unefa")
+            p.logo UNEFA
+        ul.nav-list
+            li: a(href="/") Inicio
+
+block main
+
+    section.delete
+        h1 ¿Cúantos Subgrupos desea imprimir?
+        div.delete-div
+            div.delete-div__option
+                a.option(href="/imprint/all-subgroup") Los Subgrupos
+                a.option(href="/imprint/unique-subgroup ") Un Subgrupo
+            div.loader
+                div.drawer.drawer-1
+                    div.side-left
+                    div.side-right
+                    div.side-top
+                div.drawer.drawer-2
+                    div.side-left
+                    div.side-right
+                    div.side-top
+                div.drawer.drawer-3
+                    div.side-left
+                    div.side-right
+                    div.side-top
+                div.drawer.drawer-4
+                    div.side-left
+                    div.side-right
+                    div.side-top

@@ -1,0 +1,127 @@
+extends ../templates/template
+
+block header
+    nav.nav
+        div
+            img(src="../assets/img/logo-unefa.png", alt="logo-unefa")
+            p.logo UNEFA
+        ul.nav-list
+            li: a(href="/") Inicio
+
+block main
+    section.documentation
+        div.documentation-nav-sticky
+            nav.documentation-nav
+                span Menu
+                ul.documentation-nav-list
+                    li: a(href="#intro") Intro
+                    li: a(href="#login") Login
+                    li: a(href="#launcher") Launcher
+                    li: a(href="#home") Home
+                    li: a(href="#agregar") Agregar
+                    li: a(href="#consulta") Consultas
+                    li: a(href="#eliminar") Eliminar
+                    li: a(href="#imprimir") Imprimir
+        div.documentation-content
+            h1#intro ¿De qué trata esto?
+            br
+            p Es un proyecto para automatizar las tareas rutinarias en la gestión de bienes de un núcleo de la UNEFA. Se adaptó el proyecto a los estándares que se usan para llevar el inventario, todos dirigidos por el ente organizativo que se encuentra en la Sede de Caracas. Siendo específicos con las normas de SEPARATA-09, y como la Sede lo indica, se implementaron funcionalidades de inserción de datos en formatos .xlsx (Excel). Este apartado del proyecto se dedicará al manual de uso para un usuario sin experiencia.
+            br
+            br
+            br
+            h2#login Login / Iniciar Sesión
+            br
+            p Para iniciar el programa se hará click directamente en el acceso directo del launcher (este se localizará donde desee el usuario). Al hacer click, se iniciará la UI (interfaz de usuario) del Login, donde tendrá que ingresar el Usuario y su contraseña correspondiente.
+            br
+            img.icon-UNEFA-img(src="../assets/img/acceso-launcher.png", alt="IMG acceso-launcher")
+            br
+            p El proyecto con fines de seguridad y resguardo de la información, se decidió crear un Login o Inicio Sesión. Los datos administrados en este son manejados por el mismo núcleo y son privados.
+            br
+            img.login-launcher(src="../assets/img/login.png", alt="IMG login")
+            br
+            br
+            br
+            h2#launcher Launcher / Iniciar Programa
+            br
+            br
+            p Ahora aquí sí podremos inicializar el programa. Al hacer click en Iniciar arrancará programa, se abrirá el navegador predeterminado si no está abierto, y si ya está abierto solo abrirá una pestaña en el mismo.
+            br
+            img.login-launcher(src="../assets/img/launcher.png", alt="IMG launcher")
+            br
+            p En dado caso de hacer click en Cerrar, se finalizarán las labores del servidor y no funcionará (habrá que hacer click de nuevo en Iniciar).
+            br
+            br
+            br
+            h2#home Home / Inicio
+            br
+            br
+            p El programa cuenta con tres opciones principales para manipular y ver información, las cuales son: Agregar Información, Hacer una Consulta y Eliminar Registro.
+            br
+            img(src="../assets/img/home-light.png", alt="IMG home-light")
+            br
+            img(src="../assets/img/home-dark.png", alt="IMG home-dark")
+            br
+            br
+            br
+            h2#agregar Agregar Información
+            br
+            br
+            p A la hora de hacer click en la opción de agregar información, te llevará a una página donde podrás insertar información en la base de datos del programa.
+            br
+            img(src="../assets/img/add-info.png", alt="IMG add-info")
+            br
+            p La base de datos está basada en los valores que son relativos al producto. Los valores que cambian en dependencia del producto. Y luego de insertar los datos te llevara a una página de verificación de que la inserción se realizó de forma correcta.
+            br
+            img(src="../assets/img/added-info.png", alt="IMG added-info")
+            br
+            br
+            br
+            h2#consulta Hacer una Consulta
+            br
+            br
+            p En el apartado de Hacer una Consulta, podremos ver toda la información de los productos que están base de datos, representados de forma gráfica. Tenemos tres filtros de búsqueda; Subgrupo, Serial y Descripción.
+            br
+            img(src="../assets/img/query-info.png", alt="IMG query-info")
+            br
+            p La base de datos está basada en los valores que son relativos al producto. Los valores que cambian en dependencia del producto.
+            br
+            img(src="../assets/img/query-info-result.png", alt="IMG query-info-result")
+            br
+            p NOTA: Si se desea ver todos los productos, se puede seleccionar un filtro y hacer click en buscar si insertar un parámetro de búsqueda.
+            br
+            br
+            br
+            h2#eliminar Eliminar Registro
+            br
+            br
+            p Para eliminar un registro o producto de la base de datos de forma permanente, se necesita saber el Serial del producto que se desea eliminar.
+            br
+            img(src="../assets/img/delete-info.png", alt="IMG delete-info")
+            br
+            img(src="../assets/img/deleted-info.png", alt="IMG deleteed-info")
+            br
+            p Luego de insertar y hacer click en el botón, se redireccionara el sitio web a una página de verificación.
+            br
+            br
+            br
+            h2#imprimir Imprimir
+            br
+            br
+            p Adentro de este apartado se realizarán la inserción de datos en el formato Excel final. Para ser enviado a la Sede de Caracas. En la página de Imprimir hay dos opciones: Los Subgrupos y Un Subgrupo.
+            br
+            br
+            h3 Los Subgrupos
+            br
+            br
+            p Dentro de esta opción se creará el archivo Excel con todos los datos que existan en la base de datos.
+            br
+            img(src="../assets/img/imprint-all.png", alt="IMG imprint-all")
+            br
+            br
+            h3 Un Subgrupo
+            br
+            br
+            p Aquí se realizará la inserción y creación de un solo subgrupo en específico.
+            br
+            img(src="../assets/img/imprint-one.png", alt="IMG imprint-one")
+            br

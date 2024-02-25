@@ -1,0 +1,15 @@
+extends ../templates/template
+
+block header
+    nav.nav
+        div
+            img(src="../assets/img/logo-unefa.png", alt="logo-unefa")
+            p.logo UNEFA
+        ul.nav-list
+            li: a(href="/delete") Eliminar
+            li: a(href="/search") Consultar
+
+block main
+    section.deleted
+        h1 ¡Registro agregado!
+        a.option(href="/") Ir al Inicio

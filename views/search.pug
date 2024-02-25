@@ -1,0 +1,112 @@
+extends ../templates/template
+
+block header
+
+    li: a(href="/") Inicio
+    li: a(href="/add") Agregar
+    li: a(href="/edit") Modificar
+
+block header
+    nav.nav
+        div
+            img(src="../assets/img/logo-unefa.png", alt="logo-unefa")
+            p.logo UNEFA
+        ul.nav-list
+            a(href="/") Inicio
+            a(href="/add") Agregar
+            a(href="/delete") Eliminar
+
+block main
+    section.search
+        h1 Consulta
+        form.search-container(method="post" action="/search" autocomplete="off" onsubmit="return validarCheckbox();")
+            div.search-filters-btn
+                input(type="checkbox" id="box1" value="true" name="subgrupo")
+                label.label-checkbox(for="box1") Subgrupo
+                input(type="checkbox" id="box2" value="true" name="serial")
+                label.label-checkbox(for="box2") Serial
+                input(type="checkbox" id="box3" value="true" name="description")
+                label.label-checkbox(for="box3") Descripción
+            div.search-query
+                input#inputSearch(type="text" name="valor" placeholder="Buscar" onclick="obtenerValor()")
+                button.btn-query#btnQuery(type="submit"): img(src="../assets/icon/search_white_24dp.svg", alt="icon-search")
+        div.search-products
+            if contentFormType == 0
+                div.container-no-search
+                    div.no-search
+                        h2 ¿Sabes exactamente lo que buscas?
+                        div.boxes
+                            div.box
+                                div
+                                div
+                                div
+                                div
+                            div.box
+                                div
+                                div
+                                div
+                                div
+                            div.box
+                                div
+                                div
+                                div
+                                div
+                            div.box
+                                div
+                                div
+                                div
+                                div
+            else if rows == 0
+                div.container-not-found
+                    div.not-found
+                        h2 Lo siento, el valor no existe.
+                        div.spinnerNOT
+                            div
+                            div
+                            div
+                            div
+                            div
+                            div
+                            div
+                            div
+                            div
+                            div
+            else
+                div.results#result
+                    each row in rows
+                        div.product
+                            div.subgroup-stock
+                                div.subgroup
+                                    p #{row.Code_Subgrupo}
+                                div.stock
+                                    p #{row.Stock}
+                            div.id
+                                p #{row.Serial}
+                            div.container-info(id=`containerInfo${row.Product_ID}`)
+                                div.description
+                                    p #{row.Description}
+                                div.AC-DC
+                                    div.AC
+                                        p.title-AC-DC A.C.
+                                        p.text-AC-DC #{row.AC}
+                                    div.DC
+                                        p.title-AC-DC D.C.
+                                        p.text-AC-DC #{row.DC}
+                                button.btn-slider-info(id=`btnSliderInfo${row.Product_ID}`): img(src="../assets/icon/chevron_left_white_24dp.svg", alt="icon-row")
+                                //- div.info-details
+                                //-     div.admin
+                                //-         p.admin-title Administrador
+                                //-         p.info-details-text #{row.Administrador}
+                                //-     div.adm-bienes
+                                //-         p.ad-bie-title Adm. Bienes
+                                //-         p.info-details-text #{row.Admin_Bienes}
+                                //-     div.decano
+                                //-         p.deca-title Decano
+                                //-         p.info-details-text #{row.Decano}
+                                div.product-add-edit
+                                    div.add-edit
+                                        p.title-add-edit Agregado
+                                        p.date-add-edit #{row.Inserted}
+                                    div.add-edit-state
+                                        p.title-add-edit-state Estado
+                                        p.date-add-edit-state #{row.State}

@@ -1,0 +1,23 @@
+extends ../templates/template
+
+block header
+    nav.nav
+        div
+            img(src="../assets/img/logo-unefa.png", alt="logo-unefa")
+            p.logo UNEFA
+        ul.nav-list
+            li: a(href="/imprint") Imprimir
+            label.switch#btn-switch
+                input.btn-mode(type="checkbox")
+                span.slider#sliderSpan
+
+block main
+    section.home
+        div.home-text
+            h1 Bienvenido
+            p ¿Que desea hacer?
+        div.home-option
+            button.option#optionOne Agregar Información
+            button.option#optionTwo Hacer una Consulta
+        div.home-option
+            button.option#optionThree Eliminar un Registro

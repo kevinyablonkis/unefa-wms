@@ -1,0 +1,24 @@
+{
+  "name": "unefa-wms",
+  "version": "1.2.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "child_process": "^1.0.2",
+    "cookie-parser": "^1.4.6",
+    "express": "^4.18.2",
+    "fs": "^0.0.1-security",
+    "pug": "^3.0.2",
+    "sqlite3": "^5.1.7"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}
