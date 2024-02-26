@@ -1,23 +1,23 @@
 <h1>SISTEM DE GESTÓN DE BODEGAS (WMS) para la UNEFA basado en la SEPARATA-09</h1>
 
-<h2>INDICE</h2>
+<h2>ÍNDICE</h2>
 <br>
 <ul>
-	<li>¿DE QUE TRATA EL PROYECTO?</li>
+	<li>¿DE QUÉ TRATA EL PROYECTO?</li>
 	<li>ESQUEMA DE FUNCIONAMIENTO DEL PROGRAMA</li>
 	<li>LAS DOS PARTES DEL PROYECTO: JavaScript y Python</li>
 	<li>COMO INSTALAR Y USAR</li>
 </ul>
 
-<h2>¿DE QUE TRATA EL PROYECTO?</h2>
+<h2>¿DE QUÉ TRATA EL PROYECTO?</h2>
 
-Este proyecto fue desarrollado para cumplir la necesidad de tener su primer sistema de manejo de Base de Datos, y su primera Base de Datos en la universidad, ya que se suele usar Microsoft Excel para cumplir todos estos roles. Las funcionalidades del software fueron basadas con las necesidades de como se lleva el inventario, y respetando dichas normas. De esta forma se baso en la SEPARATA-09, la cual son las normas para llevar el inventario que se sigen en la UNEFA.
+Este proyecto fue desarrollado para cumplir la necesidad de tener su primer sistema de manejo de Base de Datos, y su primera Base de Datos en la universidad, ya que se suele usar Microsoft Excel para cumplir todos estos roles. Las funcionalidades del software fueron basadas con las necesidades de como se lleva el inventario, y respetando dichas normas. De esta forma se basó en la SEPARATA-09, la cual son las normas para llevar el inventario que se siguen en la UNEFA.
 
 <h2>ESQUEMA DE FUNCIONAMIENTO DEL PROGRAMA</h2>
 
-El proyecto cuenta con un Login con usuario y clave unica (que se pueden cambiar en el futuro [se recomienda que el Usuario y Clave sean confidenciales]), luego logeado arranca un Launcher para arrancar el programa, y dentro del programa cuenta con las tres funcionalidades principales; Conultar Infomacion de la base de datos, Agregar informaccion a la DB y Elminar infomacion de la DB. 
+El proyecto cuenta con un Login con usuario y clave única (que se pueden cambiar en el futuro [se recomienda que el Usuario y Clave sean confidenciales]), luego logeado arranca un launcher para arrancar el programa, y dentro del programa cuenta con las tres funcionalidades principales; Consultar Información de la base de datos, Agregar información a la base de datos y Eliminar información de la base de datos. 
 
-Asimismo, el programa cuenta con una guia de uso sencilla para un usuario que no tenga mucho conocimiento. Tambien cuenta con una funcionalidad de insercion de datos a un archivo de .xlsx o Excel, este ya alojado en el proyecto. Se creo esta funcion ya que se lleva el inventario de forma nacional de eesta forma (los datos de cada nucleo se presentan a la sede principal en formato Excel o .xlsx).
+Asimismo, el programa cuenta con una, guía de uso sencillo para un usuario que no tenga mucho conocimiento. También cuenta con una funcionalidad de inserción de datos a un archivo de .xlsx o Excel, este ya alojado en el proyecto. Se creó esta función, ya que se lleva el inventario de forma nacional de esta forma (los datos de cada núcleo se presentan a la sede principal en formato Excel o .xlsx).
 
 <em><strong>LOGIN</strong></em>
 <br>
@@ -36,12 +36,13 @@ Asimismo, el programa cuenta con una guia de uso sencilla para un usuario que no
 
 <h2>LAS DOS PARTES DEL PROYECTO: JavaScript y Python</h2>
 
-La parte código de JavaScript del proyecto se basa en todas las funcionalidades que tienen que ver con el Sitio Web, manejo de la base de datos, presentacion de la información, código del lado del Backend y algunos toques de dinamismo en el Frontend. Y por otro lado todo el código en Python se basa en el Login, Launcher y Insercion de datos la a base de datos.
+La parte código de JavaScript del proyecto se basa en todas las funcionalidades que tienen que ver con el Sitio Web, manejo de la base de datos, presentación de la información, código del lado del Back-end y algunos toques de dinamismo en el Front-end. Y, por otro lado, todo el código en Python se basa en el Login, Launcher e Inserción de datos la a base de datos.
 
 <h2>COMO INSTALAR Y USAR</h2>
 <h3>REQUISITOS</h3>
 <ul>
 	<li>Python</li>
+	<li>PIP</li>
 	<li>Node Js</li>
 	<li>NPM</li>
 </ul>
@@ -72,5 +73,8 @@ La parte código de JavaScript del proyecto se basa en todas las funcionalidades
 
 	npm install
 
- 
+<h2>ARRANCAR EL PROYECTO</h2>
 
+El launcher se encuentra en la carpeta de <em><strong>/launcher</strong></em>, el archivo a ejecutar o hacer CLICK sería <em><strong>main.pyw.</strong></em>.
+
+<em><strong>NOTA:</strong></em> La extensión .pyw es para que se ejecute Python en segundo plano sin mostrar la consola. Sí se desea ver la consola cambiar <em><strong>.pyw</strong></em> por <em><strong>.py</strong></em>.
