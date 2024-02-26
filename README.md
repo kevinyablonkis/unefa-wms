@@ -73,7 +73,7 @@ La parte código de JavaScript del proyecto se basa en todas las funcionalidades
 
 	npm install
 
-<h2>ARRANCAR EL PROYECTO</h2>
+<h3>ARRANCAR EL PROYECTO</h2>
 
 El launcher se encuentra en la carpeta de <em><strong>/launcher</strong></em>, el archivo a ejecutar o hacer CLICK sería <em><strong>main.pyw.</strong></em>.
 
