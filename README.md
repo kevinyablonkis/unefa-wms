@@ -11,7 +11,7 @@
 
 <h2>¿DE QUÉ TRATA EL PROYECTO?</h2>
 
-Este proyecto fue desarrollado para cumplir la necesidad de tener su primer sistema de manejo de Base de Datos, y su primera Base de Datos en la universidad, ya que se suele usar Microsoft Excel para cumplir todos estos roles. Las funcionalidades del software fueron basadas con las necesidades de como se lleva el inventario, y respetando dichas normas. De esta forma se basó en la SEPARATA-09, la cual son las normas para llevar el inventario que se siguen en la UNEFA.
+Este proyecto fue desarrollado para cumplir la necesidad de tener su primer sistema de manejo de Base de Datos, y su primera Base de Datos en la universidad, ya que se suele usar Microsoft Excel para cumplir todos estos roles. Las funcionalidades del software fueron basadas con las necesidades de como se lleva el inventario, y respetando dichas normas. De esta forma se basó en la SEPARATA-09, la cuál es la norma que se sigue en la UNEFA para llevar el inventario.
 
 <h2>ESQUEMA DE FUNCIONAMIENTO DEL PROGRAMA</h2>
 
@@ -36,7 +36,7 @@ Asimismo, el programa cuenta con una, guía de uso sencillo para un usuario que 
 
 <h2>LAS DOS PARTES DEL PROYECTO: JavaScript y Python</h2>
 
-La parte código de JavaScript del proyecto se basa en todas las funcionalidades que tienen que ver con el Sitio Web, manejo de la base de datos, presentación de la información, código del lado del Back-end y algunos toques de dinamismo en el Front-end. Y, por otro lado, todo el código en Python se basa en el Login, Launcher e Inserción de datos la a base de datos.
+La parte código de JavaScript del proyecto se basa en todas las funcionalidades que tienen que ver con el Sitio Web, manejo de la base de datos, presentación de la información, código del lado del Back-end y algunos toques de dinamismo en el Front-end. Y, por otro lado, todo el código en Python se basa en el Login, Launcher e Inserción a la hoja de cálculo.
 
 <h2>COMO INSTALAR Y USAR</h2>
 <h3>REQUISITOS</h3>
