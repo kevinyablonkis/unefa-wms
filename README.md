@@ -1,7 +1,6 @@
 <h1>SISTEM DE GESTÓN DE BODEGAS (WMS) para la UNEFA basado en la SEPARATA-09</h1>
 
 <h2>ÍNDICE</h2>
-<br>
 <ul>
 	<li>¿DE QUÉ TRATA EL PROYECTO?</li>
 	<li>ESQUEMA DE FUNCIONAMIENTO DEL PROGRAMA</li>
@@ -78,3 +77,6 @@ La parte código de JavaScript del proyecto se basa en todas las funcionalidades
 El launcher se encuentra en la carpeta de <em><strong>/launcher</strong></em>, el archivo a ejecutar o hacer CLICK sería <em><strong>main.pyw.</strong></em>.
 
 <em><strong>NOTA:</strong></em> La extensión .pyw es para que se ejecute Python en segundo plano sin mostrar la consola. Sí se desea ver la consola cambiar <em><strong>.pyw</strong></em> por <em><strong>.py</strong></em>.
+
+<em><strong>NOTA IMPORTANTE:</strong></em> El Usuario y clave del Login están en la carpeta del proyecto <em><strong>/launcher/assets/users</strong></em>
+
