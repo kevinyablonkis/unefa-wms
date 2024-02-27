@@ -37,9 +37,17 @@ li, a {
 
 a {   color: var(--white);   }
 
-body {
+:where(body, .home, .home-text, .documentation-content, .documentation-nav, .documentation-nav-list, .documentation-nav-list > li, .search, .btn-query, .search-products, .container-no-search, .no-search, .container-not-found, .not-found, .results, .subgroup-stock, .subgroup, .stock, .id, .AC-DC, .btn-slider-info, .add, .add-container, .add-container form, .container-order, .add-decano, .delete, .delete-div, .delete-container, .deleted, ) {
     display: flex;
     flex-direction: column;
+}
+
+:where(.header, .nav, .nav div, .nav-list, .home-option, .documentation, .search-container, .search-filters-btn, .search-query, .product, .container-info, .sub-secc-AC-DC, .admin-bienes, .delete-div__option, .delete-filters-btn, .delete-query, .nav-footer, .nav-footer-list ) {
+    display: flex;
+    flex-direction: row;
+}
+
+body {
     min-height: 100vh;
     color: var(--white);
     background-color: var(--light-mode-background);
@@ -50,24 +58,18 @@ body {
 /* HEADER */
 
 .header {
-    display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
     padding: .5em 1.8em;
 }
 
 .nav {
-    display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: space-between;
     width: 100%;
 }
 
 .nav div {
-    display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
     gap: 1em;
@@ -78,8 +80,6 @@ body {
 }
 
 .nav-list {
-    display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
     gap: 1em;
@@ -148,8 +148,6 @@ body {
 /* HOME */
 
 .home {
-    display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 2em;
@@ -157,8 +155,6 @@ body {
 }
 
 .home-text {
-    display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
@@ -173,8 +169,6 @@ body {
 }
 
 .home-option {
-    display: flex;
-    flex-direction: row;
     gap: 4em;
 }
 
@@ -202,8 +196,6 @@ body {
 /* documentation */
 
 .documentation {
-    display: flex;
-    flex-direction: row;
     align-items: start;
     justify-content: start;
     gap: 2em;
@@ -212,8 +204,6 @@ body {
 }
 
 .documentation-content {
-    display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
@@ -241,8 +231,6 @@ body {
 }
 
 .documentation-nav {
-    display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: start;
     gap: .8em;
@@ -260,8 +248,6 @@ body {
 }
 
 .documentation-nav-list {
-    display: flex;
-    flex-direction: column;
     align-items: start;
     gap: 5px;
     padding: 0 .3em;
@@ -269,7 +255,6 @@ body {
 }
 
 .documentation-nav-list > li {
-    display: flex;
     align-items: center;
     justify-content: start;
     width: 100%;
@@ -304,8 +289,6 @@ body {
 /* HACER CONSULTA */
 
 .search {
-    display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 1em;
@@ -319,16 +302,12 @@ body {
 }
 
 .search-container {
-    display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: space-between;
     width: 90%;
 }
 
 .search-filters-btn {
-    display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
     gap: 1.5em;
@@ -370,8 +349,6 @@ body {
 }
 
 .search-query {
-    display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
 }
@@ -392,7 +369,6 @@ body {
 }
 
 .btn-query {
-    display: flex;
     align-items: center;
     justify-content: center ;
     border: none;
@@ -409,18 +385,10 @@ body {
     width: 1.55em;
 }
 
-/* PRODUCTS */
-
-.search-products {
-    display: flex;
-    flex-direction: column;
-}
-
+/* PRODUCTS *
 /* NO-SEARCH */
 
 .container-no-search {
-    display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: start;
     gap: 0em;
@@ -428,8 +396,6 @@ body {
 }
 
 .no-search {
-    display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 280px;
@@ -581,8 +547,6 @@ body {
 /* NOT-FOUND */
 
 .container-not-found {
-    display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: start;
     gap: 0em;
@@ -590,8 +554,6 @@ body {
 }
 
 .not-found {
-    display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 190px;
@@ -689,15 +651,11 @@ body {
 /* RESULTS */
 
 .results {
-    display: flex;
-    flex-direction: column;
     gap: 1em;
     width: 1250px;
 }
 
 .product {
-    display: flex;
-    flex-direction: row;
     max-width: 100%;
     height: 80px;
     border-radius: 10px;
@@ -705,15 +663,11 @@ body {
 }
 
 .subgroup-stock {
-    display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
 .subgroup, .stock {
-    display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 1em;
@@ -729,7 +683,6 @@ body {
 }
 
 .id {
-    display: flex;
     align-items: center;
     justify-content: center;
     background-color: var(--light-mode-btn);
@@ -739,8 +692,6 @@ body {
 }
 
 .container-info {
-    display: flex;
-    flex-direction: row;
     transition: ease .3s;
     width: 1200px;
     overflow: hidden;
@@ -761,13 +712,11 @@ body {
     width: 870px;
 }
 
-.AC-DC {
+.title-AC-DC, .text-AC-DC, .AC, .DC {
     display: flex;
-    flex-direction: column;
 }
 
 .title-AC-DC, .text-AC-DC {
-    display: flex;
     align-items: start;
     width: 80px;
     height: 100%;
@@ -800,7 +749,6 @@ body {
 }
 
 .btn-slider-info {
-    display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 100px;
@@ -818,37 +766,6 @@ body {
 
 .SliderInfo-Active {
     transform: rotate(180deg);
-}
-
-.info-details {
-    display: flex;
-    flex-direction: row;
-}
-
-.admin, .adm-bienes, .decano {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    width: 200px;
-}
-
-.admin-title, .ad-bie-title {
-    background-color: var(--light-mode-admin-bienes);
-    padding: 2px;
-}
-
-.deca-title {
-    padding: 2px;
-    background-color: var(--light-mode-decano);
-}
-
-.info-details-text {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    background-color: var(--white);
-    color: var(--black);
 }
 
 .product-add-edit {
@@ -890,8 +807,6 @@ body {
 /* AGREGAR INFORMACIÓN */
 
 .add {
-    display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 1em;
@@ -907,7 +822,6 @@ body {
 .add-container {
     position: relative;
     z-index: 1111;
-    display: flex;
     align-items: center;
     justify-content: center;
     padding: .5em;
@@ -925,8 +839,6 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 1em;
@@ -973,6 +885,7 @@ body {
 .descrip textarea:focus,
 .add-admin input:focus,
 .bienes input:focus,
+.state input:focus,
 .add-decano input:focus {
     box-shadow: 2px 2px 0px 3px var(--light-mode-btn);
 }
@@ -985,16 +898,9 @@ body {
 }
 
 .sub-secc-AC-DC {
-    display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
     gap: 1em;
-}
-
-.container-order {
-    display: flex;
-    flex-direction: column;
 }
 
 .container-order {
@@ -1002,8 +908,6 @@ body {
 }
 
 .admin-bienes {
-    display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
     gap: 8em;
@@ -1031,8 +935,6 @@ body {
 }
 
 .add-decano {
-    display: flex;
-    flex-direction: column;
     align-items: center;
     width: 100%;
 }
@@ -1071,8 +973,6 @@ body {
 /* ELIMINAR UN REGISTRO */
 
 .delete {
-    display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 1em;
@@ -1086,8 +986,6 @@ body {
 }
 
 .delete-div {
-    display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 1em;
@@ -1099,8 +997,6 @@ body {
 }
 
 .delete-div__option {
-    display: flex;
-    flex-direction: row;
     gap: 2em;
 }
 
@@ -1110,8 +1006,6 @@ body {
 
 
 .delete-container {
-    display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: space-between;
     gap: 25px;
@@ -1120,16 +1014,12 @@ body {
 }
 
 .delete-filters-btn {
-    display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
     gap: 1.5em;
 }
 
 .delete-query {
-    display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
 }
@@ -1156,8 +1046,6 @@ body {
     top: 45%;
     left: 50%;
     transform: translate(-50%,-50%);
-    display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 2em;
@@ -1235,15 +1123,11 @@ body {
 }
 
 .nav-footer {
-    display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: space-between;
 }
 
 .nav-footer-list {
-    display: flex;
-    flex-direction: row;
     gap: 1em;
 }
 
