@@ -79,7 +79,7 @@ El launcher se encuentra en la carpeta de <em><strong>/launcher</strong></em>, e
 <br>
 
 > [!NOTE]
-> La extensión .pyw es para que se ejecute Python en segundo plano sin mostrar la consola. Sí se desea ver la consola cambiar <em><strong>.pyw</strong></em> por <em><strong>.py</strong></em>.
+> La extensión .pyw es para que se ejecute Python en segundo plano sin mostrar la consola (solo funciona en Windows, si se va usar en Linux o MacOS se recomienda .py). Sí se desea ver la consola cambiar <em><strong>.pyw</strong></em> por <em><strong>.py</strong></em>.
 
 <br>
 
